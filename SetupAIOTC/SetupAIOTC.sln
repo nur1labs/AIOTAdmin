@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupAIOTC", "SetupAIOTC\SetupAIOTC.vdproj", "{D938FF2C-AD00-4933-AAE4-726B3765BAA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D938FF2C-AD00-4933-AAE4-726B3765BAA1}.Debug|Default.ActiveCfg = Debug
+		{D938FF2C-AD00-4933-AAE4-726B3765BAA1}.Debug|Default.Build.0 = Debug
+		{D938FF2C-AD00-4933-AAE4-726B3765BAA1}.Release|Default.ActiveCfg = Release
+		{D938FF2C-AD00-4933-AAE4-726B3765BAA1}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
