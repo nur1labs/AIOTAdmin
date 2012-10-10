@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4405982-4EB7-4AF6-9CF7-89FAEC7D2AFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AllInOneToolAdmin.My.MyApplication</StartupObject>
+    <RootNamespace>AllInOneToolAdmin</RootNamespace>
+    <AssemblyName>AllInOneToolAdmin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AllInOneToolAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AllInOneToolAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NewLogoO2PSoftLabs.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminControl.Designer.vb">
+      <DependentUpon>AdminControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\List\CheckID.Designer.vb">
+      <DependentUpon>CheckID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\List\CheckID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\List\FlyCheckerList.Designer.vb">
+      <DependentUpon>FlyCheckerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\List\FlyCheckerList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\TryAdmin.Designer.vb">
+      <DependentUpon>TryAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\TryAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Input\InpUserBan.Designer.vb">
+      <DependentUpon>InpUserBan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Input\InpUserBan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\List\UserBanList.Designer.vb">
+      <DependentUpon>UserBanList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\List\UserBanList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\User\StaffAccountList.Designer.vb">
+      <DependentUpon>StaffAccountList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\User\StaffAccountList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\User\UserAccountList.Designer.vb">
+      <DependentUpon>UserAccountList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\User\UserAccountList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\User\UserBannedList.Designer.vb">
+      <DependentUpon>UserBannedList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\User\UserBannedList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\World\BaseList.Designer.vb">
+      <DependentUpon>BaseList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\World\BaseList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\World\GeneralList.Designer.vb">
+      <DependentUpon>GeneralList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\World\GeneralList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\World\InventoryList.Designer.vb">
+      <DependentUpon>InventoryList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\World\InventoryList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\Menu\BillingControlDev.Designer.vb">
+      <DependentUpon>BillingControlDev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\Menu\BillingControlDev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\Billing\CashList.Designer.vb">
+      <DependentUpon>CashList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\Billing\CashList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\Billing\PremiumList.Designer.vb">
+      <DependentUpon>PremiumList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\Billing\PremiumList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\Menu\WorldControlDev.Designer.vb">
+      <DependentUpon>WorldControlDev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\Menu\WorldControlDev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\List\User\StaffAddTest.Designer.vb">
+      <DependentUpon>StaffAddTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\List\User\StaffAddTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EO\EOControl.Designer.vb">
+      <DependentUpon>EOControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EO\EOControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EO\TryEO.Designer.vb">
+      <DependentUpon>TryEO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EO\TryEO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EO\UserEvent\UserTrackingEvent.Designer.vb">
+      <DependentUpon>UserTrackingEvent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EO\UserEvent\UserTrackingEvent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ConnBilling.vb" />
+    <Compile Include="Module\ConnUser.vb" />
+    <Compile Include="Module\ConnWorld.vb" />
+    <Compile Include="Dev\TrySystemDev.Designer.vb">
+      <DependentUpon>TrySystemDev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\TrySystemDev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GM\GMControl.Designer.vb">
+      <DependentUpon>GMControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GM\GMControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GM\TryGM.Designer.vb">
+      <DependentUpon>TryGM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GM\TryGM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\MainControl.Designer.vb">
+      <DependentUpon>MainControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\MainControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Admin\Menu\UserControlAdm.Designer.vb">
+      <DependentUpon>UserControlAdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Menu\UserControlAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dev\Menu\UserControlDev.Designer.vb">
+      <DependentUpon>UserControlDev.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dev\Menu\UserControlDev.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunRF.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminControl.resx">
+      <DependentUpon>AdminControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\List\CheckID.resx">
+      <DependentUpon>CheckID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\List\FlyCheckerList.resx">
+      <DependentUpon>FlyCheckerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\TryAdmin.resx">
+      <DependentUpon>TryAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Input\InpUserBan.resx">
+      <DependentUpon>InpUserBan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\List\UserBanList.resx">
+      <DependentUpon>UserBanList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\User\StaffAccountList.resx">
+      <DependentUpon>StaffAccountList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\User\UserAccountList.resx">
+      <DependentUpon>UserAccountList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\User\UserBannedList.resx">
+      <DependentUpon>UserBannedList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\World\BaseList.resx">
+      <DependentUpon>BaseList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\World\GeneralList.resx">
+      <DependentUpon>GeneralList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\World\InventoryList.resx">
+      <DependentUpon>InventoryList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\Menu\BillingControlDev.resx">
+      <DependentUpon>BillingControlDev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\Billing\CashList.resx">
+      <DependentUpon>CashList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\Billing\PremiumList.resx">
+      <DependentUpon>PremiumList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\Menu\WorldControlDev.resx">
+      <DependentUpon>WorldControlDev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\List\User\StaffAddTest.resx">
+      <DependentUpon>StaffAddTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\TrySystemDev.resx">
+      <DependentUpon>TrySystemDev.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EO\EOControl.resx">
+      <DependentUpon>EOControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EO\TryEO.resx">
+      <DependentUpon>TryEO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EO\UserEvent\UserTrackingEvent.resx">
+      <DependentUpon>UserTrackingEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GM\GMControl.resx">
+      <DependentUpon>GMControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GM\TryGM.resx">
+      <DependentUpon>TryGM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\MainControl.resx">
+      <DependentUpon>MainControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Menu\UserControlAdm.resx">
+      <DependentUpon>UserControlAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dev\Menu\UserControlDev.resx">
+      <DependentUpon>UserControlDev.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AIOTDataAdmin\AIOTDataAdmin.vbproj">
+      <Project>{54376674-E948-46B6-A96D-16C6962AAC5D}</Project>
+      <Name>AIOTDataAdmin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewLogoO2PSoftLabs.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
